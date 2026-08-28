@@ -1,0 +1,764 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Demo</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <script
+        src="https://kit.fontawesome.com/79a375651e.js"
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container-fluid px-0">
+
+        <!-- ================= NAVBAR ================= -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    ChaloChale
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Destination
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Packages
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Booking
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <button
+                        class="btn btn-warning ms-lg-3"
+                        type="button">
+                        Signup
+                    </button>
+
+                    <button
+                        class="btn btn-warning ms-lg-2 mt-2 mt-lg-0"
+                        type="button">
+                        Login
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- ================= CAROUSEL ================= -->
+        <div class="container-fluid px-0">
+
+            <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel">
+
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                    </button>
+
+                </div>
+
+
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+
+                        <img
+                            src="images/traval.jpg"
+                            class="d-block w-100"
+                            alt="Travel destination">
+
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <h5>Explore Amazing Destinations</h5>
+
+                            <p>
+                                Discover beautiful places and create
+                                unforgettable memories.
+                            </p>
+
+                            <button
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">
+                                Explore Now
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+
+                        <img
+                            src="images/montain.jpg"
+                            class="d-block w-100"
+                            alt="Mountain destination">
+
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <h5>Discover the Mountains</h5>
+
+                            <p>
+                                Enjoy peaceful mountain destinations
+                                and exciting adventures.
+                            </p>
+
+                            <button
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">
+                                View Package
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+
+                        <img
+                            src="images/bus.JPG"
+                            class="d-block w-100"
+                            alt="Travel bus">
+
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <h5>Travel With Comfort</h5>
+
+                            <p>
+                                Enjoy comfortable and affordable travel
+                                experiences.
+                            </p>
+
+                            <button
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">
+                                Explore Now
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Previous Button -->
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Previous
+                    </span>
+
+                </button>
+
+
+                <!-- Next Button -->
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Next
+                    </span>
+
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- ================= SERVICES SECTION ================= -->
+        <section class="py-5 bg-light">
+
+            <div class="container">
+
+                <h2 class="text-center fw-bold mb-4">
+                    Why Choose ChaloChale?
+                </h2>
+
+                <div class="row text-center">
+
+                    <!-- Service 1 -->
+                    <div class="col-md-4 mb-4">
+
+                        <i
+                            class="fa-solid fa-plane fa-3x text-primary mb-3">
+                        </i>
+
+                        <h5 class="fw-bold">
+                            Easy Booking
+                        </h5>
+
+                        <p>
+                            Book travel packages quickly with our
+                            simple booking system.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Service 2 -->
+                    <div class="col-md-4 mb-4">
+
+                        <i
+                            class="fa-solid fa-hotel fa-3x text-success mb-3">
+                        </i>
+
+                        <h5 class="fw-bold">
+                            Best Hotels
+                        </h5>
+
+                        <p>
+                            We provide comfortable hotel stays at
+                            affordable prices.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Service 3 -->
+                    <div class="col-md-4 mb-4">
+
+                        <i
+                            class="fa-solid fa-headset fa-3x text-warning mb-3">
+                        </i>
+
+                        <h5 class="fw-bold">
+                            24/7 Support
+                        </h5>
+
+                        <p>
+                            Our travel support team is available
+                            anytime for assistance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PACKAGES SECTION ================= -->
+        <section class="py-5">
+
+            <div class="container">
+
+                <h2 class="text-center fw-bold mb-4">
+                    Popular Travel Packages
+                </h2>
+
+                <div class="row g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/bus.jpg"
+                                class="card-img-top"
+                                alt="Goa travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Goa Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Enjoy beaches, sightseeing and
+                                    exciting activities in Goa.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/bus.jpg"
+                                class="card-img-top"
+                                alt="Manali travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Manali Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Explore beautiful mountains and
+                                    enjoy an adventurous trip to Manali.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/bus.jpg"
+                                class="card-img-top"
+                                alt="Kerala travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Kerala Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Experience beautiful backwaters,
+                                    beaches and nature in Kerala.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/bus.jpg"
+                                class="card-img-top"
+                                alt="Jaipur travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Jaipur Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Discover forts, palaces and the
+                                    rich culture of Jaipur.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 5 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/bus.jpg"
+                                class="card-img-top"
+                                alt="Travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Adventure Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Enjoy exciting adventures and
+                                    unforgettable travel experiences.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 6 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/bus.jpg"
+                                class="card-img-top"
+                                alt="Holiday package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Holiday Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Plan your perfect holiday with
+                                    ChaloChale travel packages.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOOKING MODAL ================= -->
+        <div
+            class="modal fade"
+            id="bookingModal"
+            tabindex="-1"
+            aria-labelledby="bookingModalLabel"
+            aria-hidden="true">
+
+            <div class="modal-dialog modal-lg">
+
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+
+                        <h5
+                            class="modal-title"
+                            id="bookingModalLabel">
+                            Book Your Trip
+                        </h5>
+
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </button>
+
+                    </div>
+
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+
+                        <form>
+
+                            <!-- Name + Email -->
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Full Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Enter your name"
+                                        required>
+
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="Enter email"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Destination + Date -->
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Select Destination
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        required>
+
+                                        <option value="">
+                                            Choose destination
+                                        </option>
+
+                                        <option value="Goa">
+                                            Goa
+                                        </option>
+
+                                        <option value="Manali">
+                                            Manali
+                                        </option>
+
+                                        <option value="Kerala">
+                                            Kerala
+                                        </option>
+
+                                        <option value="Jaipur">
+                                            Jaipur
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Travel Date
+                                    </label>
+
+                                    <input
+                                        type="date"
+                                        class="form-control"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Number of People -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Number of People
+                                </label>
+
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Enter number of people"
+                                    min="1"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Phone Number -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    placeholder="Enter phone number"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Message -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    rows="3"
+                                    placeholder="Any special request?">
+                                </textarea>
+
+                            </div>
+
+
+                            <!-- Submit -->
+                            <button
+                                type="submit"
+                                class="btn btn-success w-100">
+                                Submit Booking Request
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
+```
