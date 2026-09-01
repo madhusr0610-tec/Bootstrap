@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Demo</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <script
+        src="https://kit.fontawesome.com/79a375651e.js"
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container-fluid px-0">
+
+        <!-- ================= NAVBAR ================= -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    ChaloChale
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="destination.html" class="nav-link">
+                                Destination
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="packages.html" class="nav-link">
+                                Packages
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="booking.html" class="nav-link">
+                                Booking
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <button
+                        class="btn btn-warning ms-lg-3"
+                        type="button">
+                        Signup
+                    </button>
+
+                    <button
+                        class="btn btn-warning ms-lg-2 mt-2 mt-lg-0"
+                        type="button">
+                        Login
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <section class="py-5 bg-light text text-center">
+        <div class="container">
+            <h1 class="fw-bold">Travel Package</h1>
+            <p class="lead">Explore amazing destination with ChaloChale Travel App</p>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+        <footer class="bg-dark text-white text-center py-4">
+
+            <div class="container">
+
+                <h5 class="fw-bold">
+                    ChaloChale
+                </h5>
+
+                <p class="mb-2">
+                    Explore. Travel. Create Memories.
+                </p>
+
+                <div class="mb-3">
+
+                    <a href="#"
+                        class="text-white mx-2">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#"
+                        class="text-white mx-2">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#"
+                        class="text-white mx-2">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#"
+                        class="text-white mx-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                </div>
+
+                <p class="mb-0">
+                    &copy; 2026 ChaloChale. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </footer>
+
+                <!-- ================= PACKAGES SECTION ================= -->
+        <section class="py-5">
+
+            <div class="container">
+
+                <h2 class="text-center fw-bold mb-4">
+                    Popular Travel Packages
+                </h2>
+
+                <div class="row g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/image"
+                                class="card-img-top"
+                                alt="Goa travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Goa Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Enjoy beaches, sightseeing and
+                                    exciting activities in Goa.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/image2.JPG.jpg"
+                                class="card-img-top"
+                                alt="Manali travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Manali Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Explore beautiful mountains and
+                                    enjoy an adventurous trip to Manali.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/image3.JPG"
+                                class="card-img-top"
+                                alt="Kerala travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Kerala Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Experience beautiful backwaters,
+                                    beaches and nature in Kerala.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="col-md-4">
+
+                        <div class="card h-100 shadow-sm">
+
+                            <img
+                                src="images/image4.JPG.jpg"
+                                class="card-img-top"
+                                alt="Jaipur travel package">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Jaipur Package
+                                </h5>
+
+                                <p class="card-text">
+                                    Discover forts, palaces and the
+                                    rich culture of Jaipur.
+                                </p>
+
+                                <button
+                                    class="btn btn-primary w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
+```
